@@ -4,9 +4,7 @@ const { Octokit } = require("@octokit/rest");
 
 
     async function flow() {
-        const APP_ID = 64781; // replace with your app ID
-        const PRIVATE_KEY = "-----BEGIN RSA PRIVATE KEY-----\n" +
-            "-----END RSA PRIVATE KEY-----"; // replace with contents of your private key. Replace line breaks with \n
+
 
         const app = new App({ id: APP_ID, privateKey: PRIVATE_KEY });
         const jwt = app.getSignedJsonWebToken();
