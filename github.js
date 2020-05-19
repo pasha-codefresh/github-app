@@ -12,7 +12,6 @@ const { Octokit } = require("@octokit/rest");
                 accept: "application/vnd.github.machine-man-preview+json",
             },
         });
-
         const installationId = data.id;
 
         console.log(installationId);
