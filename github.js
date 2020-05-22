@@ -11,7 +11,7 @@ const { Octokit } = require("@octokit/rest");
                 authorization: `Bearer ${jwt}`,
                 accept: "application/vnd.github.machine-man-preview+json",
             },
-        });ffdвіф
+        });ffdвіфdsada
         const installationId = data.id;
 
         console.log(installationId);
