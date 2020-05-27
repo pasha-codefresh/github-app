@@ -2,7 +2,7 @@ const { App } = require("@octokit/app");
 const { request } = require("@octokit/request");
 const { Octokit } = require("@octokit/rest");
     async function flow() {
-        const app = new App({ id: APP_ID, privateKey: PRIVATE_KEY });
+        const app = new App({ id: APP_ID, privateKey: PRIVATE_KEY });ds
         const jwt = app.getSignedJsonWebToken();
         const { data } = await request("GET /repos/:fdowner/:repo/installation", {
             owner: "pasha-codefresh",
